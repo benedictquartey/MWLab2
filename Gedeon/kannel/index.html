@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>SMSAPP</title>
+    <meta name="author" content="Gedeon Niyonkuru">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link type="text/css" rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+    <link type="text/css" rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css" />
+</head>
+
+<body>
+    <div class="col-md-offset-3 col-md-6">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">Send SMS APP</h3>
+            </div>
+            <div class="pannel-body">
+                <form action="sms.php" method="post">
+                    <div class="form-group">
+                        <label> Message </label>
+                        <input class="form-control" placeholder="Type the message here" name="message" type="text" id="message">
+                    </div>
+
+                    <div class="form-group">
+                        <label> The first number </label>
+                        <input class="form-control" placeholder="write the number with the country code" name="1" type="text" id="1stnum">
+                    </div>
+
+                    <div class="form-group">
+                        <label> Second number </label>
+                        <input class="form-control" placeholder="write the number with the country code" name="2" type="text" id="2ndnum">
+                    </div>
+
+                    <div class="form-group">
+                        <label> third number </label>
+                        <input class="form-control" placeholder="write the number with the country code" name="3" type="text" id="3rdnum">
+                    </div>
+                    <button type="submit" class="btn btn-default">Submit</button>
+
+                </form>
+
+            </div>
+
+            <div class="panel-footer">
+                <div id="feedback">Don't worry, you'll get it</div>
+            </div>
+        </div>
+    </div>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>
