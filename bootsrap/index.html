@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>HTML5 Contact Form</title>
+      <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="container">  
+  <form id="contact" action="" method="post">
+  <button onclick="increment()">Increase</button> <br>
+  <button onclick="decrement()">Decrease</button>
+    <h3 id="counter">Quick Counter </h3> 
+    <h4>Contact us today, and get reply with in 24 hours!</h4>
+    <fieldset>
+      <input placeholder="Your name" type="text" id="name" tabindex="1" required autofocus>
+    </fieldset>
+    <fieldset>
+      <input placeholder="Your Email Address" type="email" id="email" tabindex="2" required>
+    </fieldset>
+    <fieldset>
+      <input placeholder="Your Phone Number" type="tel" id="phone" tabindex="3" required>
+    </fieldset>
+    <fieldset>
+      <input placeholder="Your Web Site starts with http://" type="url" id="website" tabindex="4" required>
+    </fieldset>
+    <fieldset>
+      <textarea placeholder="Type your Message Here...." id="message" tabindex="5" required></textarea>
+    </fieldset>
+    <fieldset>
+      <button name="submit" type="submit" id="contact-submit" data-submit="...Sending" onclick="validateForm()">Submit</button>
+    </fieldset>
+  </form>
+  
+</div>
+
+  <script type="text/javascript" src="myJavaScript.js"></script>
+</body>
+</html>
