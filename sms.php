@@ -14,9 +14,9 @@
 				foreach ($printArray as $value) {
 					$temp=$temp.$value."+";
 				}
-				header('location:144.76.58.179:16243/cgi-bin/sendsms?username=senduser&password=sendpass&to=$temp&from=$userID&text=$msg&dlr-mask=31');
+				header('location: http://144.76.58.179:16243/cgi-bin/sendsms?username=senduser&password=sendpass&to='.$temp.'&from='.$userID.'&text='.$msg.'&dlr-mask=31');
 
-				echo $printArray;
+				//echo $printArray;
 			}
 
 ?>

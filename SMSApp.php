@@ -22,7 +22,7 @@
 				<textarea name="Message"; class="form-control" style="width:500px; height:200px;""></textarea><br>
 			</fieldset>
 			<fieldset>
-				<button name="Send" type="submit" class="btn btn-success" data-submit="...Sending">Send</button>
+				<input name="Send" type="submit" class="btn btn-success" data-submit="...Sending" value="send">
 			</fieldset>
 			
 		</form>
