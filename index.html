@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <title>The Materialize Example</title>
+      <meta name = "viewport" content = "width = device-width, initial-scale = 1">      
+      <link rel = "stylesheet"
+         href = "https://fonts.googleapis.com/icon?family=Material+Icons">
+      <link rel = "stylesheet"
+         href = "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/css/materialize.min.css">
+      <script type = "text/javascript"
+         src = "https://code.jquery.com/jquery-2.1.1.min.js"></script>           
+      <script src = "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js">
+      </script> 
+</head>
+
+<body>
+
+ 
+
+ <div class = "row" style = "width:560px;">
+         <div class = "col s12 m12 l12">
+            
+            <nav>
+               <div class = "nav-wrapper">
+                  <a href = "#" class = "brand-logo center"> MESSENGER</a>
+                  <ul id = "nav-mobile" class = "right hide-on-med-and-down">                    
+                     <li><a href = "#"></a></li>
+                  </ul>
+               </div>
+            </nav>
+         </div>
+      </div>
+
+      <div class = "input-field col s6">      
+                  <label for = "SenderId">SENDER ID</label>
+                  <input id = "SenderId" type = "text" placeholder = "Sender Id"
+                     class = "validate" required />          
+               </div>
+               <div class = "row">
+               <div class = "input-field col s12">
+                  <input placeholder = "Recepient Number" id = "RecepientNo" type = "text"
+                     class = "validate">
+                  <label for = "Receipient Number">Receipient Number</label>
+               </div>
+                <div class = "row">
+               <div class = "input-field col s12">
+                  <input placeholder = "Messsage" id = "message" type = "text"
+                     class = "validate">
+                  <label for = "Message">Please type your message</label>
+               </div>
+
+               <div>
+            <button  type="submit" name="action" onclick="message()">Submit</button>
+            </div>
+            
+         </div>
+<script> 
+function message(){
+ var sender = document.getElementById("SenderId").value;
+ var Recepient = document.getElementById("RecepientNo").value;
+ var Message = document.getElementById("message").value;
+
+ window.location = 'http://144.76.58.179:16243/cgi-bin/sendsms?username=senduser&password=sendpass&to=' + Recepient + '&from=' + sender + '&text=' + Message + '&dlr-mask=31'
+
+}
+
+
+
+</script>
+      
+
+</body>
+</html>
