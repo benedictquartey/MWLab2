@@ -14,14 +14,14 @@
     <body class="brown lighten-3"> 
         <div id="wrapper">
             <div id="form_container" class="">
-                <form id="form" class="card blue-grey darken-3" action="main.php" method="post">
+                <form id="form" class="card blue-grey darken-3">
                     <span id="form_heading" class="card-title center white-text">SMS App</span>
                     <div class="card-content white-text">
                         <div id="inputs" class=" ">
                             <div  class="input-field">
                                 <i class="material-icons prefix medium">person</i>
-                                <input id="sender" type="text" class="validate" ></input>
-                                <label for="sender">Sender</label>
+                                <input id="username" type="text" class="validate" ></input>
+                                <label for="username">Sender</label>
                             </div>
                             <div  class="input-field">
                                 <i class="material-icons prefix medium">phone</i>
