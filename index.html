@@ -22,7 +22,7 @@
 		<div class="container">
 			<h4 style="text-decoration: underline; padding-bottom: 20px">Enter Message</h4>
 			<!-- Form to enter in message details -->
-			<form onsubmit="return sendSMS()">
+			<form >
 			<label>Sender ID : &nbsp;</label>
 			<!-- Insert sender id -->
 			<input type="text" id="senderID" required/> <br>
@@ -34,7 +34,7 @@
 			<textarea id="mess" cols="30" rows="10" required></textarea> 
 			<br>
 			<br>
-	        <input type="submit" value="Send SMS">
+	        <input type="button" onclick="return sendSMS()" value="Send SMS">
 	        </form>
 		</div>
 	</div>
