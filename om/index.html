@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>SMS PUSH</title>
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1 class="brand"><span>SMS </span> PUSH</h1>
+    <div class="wrapper animated bounceInLeft">
+      <div class="company-info">
+        <h3>SMS PUSH </h3>
+        <ul>
+          <li><i class="fa fa-road"></i> St. Andrews High School </li>
+          <li><i class="fa fa-phone"></i> (555) 555-5555</li>
+          <li><i class="fa fa-envelope"></i> st@school.gh</li>
+        </ul>
+      </div>
+      <div class="contact">
+        <h3>Send SMS</h3>
+        <form  id="form">
+          <p class="full">
+            <label>Sender  ID</label>
+            <input type="text" name="senderId" id="senderId" required>
+          </p>
+          <p class="full">
+            <label>Parents' Phone Number(( Seperate with each number with plus)</label>
+            <input type="tel" name="phone" required id="phone">
+          </p>
+          <p class="full">
+            <label>Message</label>
+            <textarea name="message" id="message" rows="10" required></textarea>
+          </p>
+          <p class="full">
+            <button>Submit</button>
+          </p>
+        </form>
+      </div>
+    </div>
+  </div>
+  <script>
+    document.getElementById("form").addEventListener("submit", (e)=>{
+      e.preventDefault();
+      let senderId = document.getElementById("senderId").value;
+      let phone = document.getElementById("phone").value;
+      let message = document.getElementById("message").value;
+      window.location.href = `http://144.76.58.179:16243/cgi-bin/sendsms?username=senduser&password=sendpass&to=${phone}&from=${senderId}&text=${message}&dlr-mask=31`;
+
+      // fetch(`144.76.58.179:16243/cgi-bin/sendsms?username=senduser&password=sendpass&to=recipients&from=${senderId}&text=${mMessage}&dlr-mask=31`,{
+      //   method: 'post',
+	    //   body: JSON.stringify({
+      //     senderId: senderId,
+		  //     phone: phone,
+      //     message, message
+	    //   })
+      // }
+      // )
+      
+
+    })
+  </script>
+</body>
+</html>
