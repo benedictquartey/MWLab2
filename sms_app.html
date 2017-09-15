@@ -61,12 +61,16 @@
 
 				  <script type="text/javascript">
 				  	
+				  	//function to send sms to the required numbers
 				  	function sendSMS(){
+				  		//taking values from the form to enter into url for kannel
 				  		 var x = document.getElementById("sID").value;
 				  		  var y = document.getElementById("second_no").value;
 				  		   var m = document.getElementById("message").value;
 
-				 var url = "http://144.76.58.179:16243/cgi-bin/sendsms?username=senduser&password=sendpass&to=" + y + "&from=" + x + "&text" + m + "&dlr-mask=31";
+				  		   var res = y.split(","); 
+
+				 var url = "http://144.76.58.179:16243/cgi-bin/sendsms?username=senduser&password=sendpass&to=" + res[0] + "+" + res[1] + "+" + res[2] + "&from=" + x + "&text=" + m + "&dlr-mask=31";
 
 				 window.location  = url;
 
