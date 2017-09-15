@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>SMS Gateway</title>
+      <meta name = "viewport" content = "width = device-width, initial-scale = 1">
+      <!--including materialize framework -->
+      <link rel = "stylesheet"
+         href = "https://fonts.googleapis.com/icon?family=Material+Icons">
+      <link rel = "stylesheet"
+         href = "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/css/materialize.min.css">
+      <script type = "text/javascript"
+         src = "https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <script src = "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js">
+      </script>
+   </head>
+
+   <!--introducing javascript -->
+   <script type= "text/javascript">
+   function send()
+   {
+    // function to take variables from form and append them in message.
+     var sender = document.getElementById('senderid').value;
+     var recipients = document.getElementById('numbers').value;
+     var message= document.getElementById('message').value;
+     var numbers = recipients.split(",");
+
+     // appending info from text boxes into url
+       window.location.href = 'http://144.76.58.179:16243/cgi-bin/sendsms?username=senduser&password=sendpass&to=' + numbers[0] + "+" + numbers[1] + "+" + numbers[2] + '&from=' + sender + '&text=' + message + '&dlr-mask=31';
+   }
+   </script>
+
+<!--html form -->
+<h1>  SMS Gateway </h1><br>
+
+<!-- html code for sender text field-->
+<body class = "light-blue-text">
+    <div class="row">
+        <div class="row">
+          <div class="input-field col s6">
+            <div class = "indigo-text.text-lighten-5">
+            <label for="senderid">Sender ID</label>
+            <input id="senderid" type="text" data-length="10" class="validate" placeholder="Enter Sender's name here">
+          </div>
+        </div>
+        </div>
+      </div>
+
+<!-- html code for recipients text field-->
+        <div class="row">
+              <div class="row">
+                <div class="input-field col s6">
+                  <label for="numbers">Send To</label>
+                  <input id="numbers" type="text" class = "validate" placeholder = "Enter recipients' number(s) here, separated by a comma">
+                </div>
+              </div>
+          </div>
+
+<!-- html code for message text field-->
+            <div class="row">
+                    <div class="row">
+                      <div class="input-field col s12">
+                        <textarea id="message" class="materialize-textarea" placeholder="Enter message here"></textarea>
+                        <label for="message">Message</label>
+                      </div>
+                    </div>
+                </div>
+
+<!-- html code for button-->
+        <button type = "submit" name="action" id = "button" onclick="send()">Submit</button>
+
+</body>
+</html>
