@@ -1,0 +1,24 @@
+   
+   #header{
+   padding: right;
+   
+   }
+   
+   body {
+    background-color :paleblue;
+    margin: 0;
+    padding: 0;
+}
+h1 {
+    color : blue;
+    text-align : center;
+    font-family: "Times New Roman";
+	font-size: 150%;
+}
+form {
+	background-color: #E1F5A9;
+    width: 1000px;
+	height: 1000px
+    margin: 100% 10% 15% 5%;;
+	border: 1px solid powderblue;
+}
