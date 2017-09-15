@@ -11,19 +11,18 @@
 		<form action="" method="post">
 			<fieldset>
 				<label>SendeID (your name)</label><br>
-				<input type="" name=""><br>
+				<input type="text" name="username"><br>
 			</fieldset>
 			<fieldset>
 				<label>Phone numbers</label>
-				<input type="" name="">
+				<input type="text" name="number">
 			</fieldset>
 			<fieldset>
 				<label>Message</label><br>
 				<textarea name="message"; style="width:300px; height:100px;""></textarea><br>
 			</fieldset>
 			<fieldset>
-				<button name="login" type="submit" id="loginSubmit" data-submit="...Sending">Submit</button>
-				<a href="../register/index.php">Sign Up</a>
+				<button name="Send" type="submit" data-submit="...Sending">Send</button>
 			</fieldset>
 			
 		</form>
