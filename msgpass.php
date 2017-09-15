@@ -1,5 +1,9 @@
-<?php 
 
+
+<?php 
+/**
+ * @author Kwabena Adu-Darkwa
+**/
 $message= $_GET["msg"];
 $listNum= $_GET["num"];
 $submit = $_GET["submit"];
