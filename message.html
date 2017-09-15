@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Message</title>
+	<meta name = "viewport" content = "width = device-width, initial-scale = 1">      
+      <link rel = "stylesheet"
+         href = "https://fonts.googleapis.com/icon?family=Material+Icons">
+      <link rel = "stylesheet"
+         href = "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/css/materialize.min.css">
+      <script type = "text/javascript"
+         src = "https://code.jquery.com/jquery-2.1.1.min.js"></script>           
+      <script src = "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js">
+      </script> 
+      
+</head>
+<body>
+
+	<div class="container" id="pg">
+		<form>
+		<!--parameters for input-->
+		<h2> St. Andrews High School </h2>
+			<p>SenderID</p>
+			<input type="text" name="uname" id="name">
+
+			<p>Number</p>
+			<input type="text" name="numb" id="no">
+
+			<p>Message</p>
+			<textarea name="msg" id="msg"></textarea>
+
+			<br>
+			 <button class="btn waves-effect waves-light" type="submit" name="action" onclick="load()"><i class="material-icons right">send</i>
+  </button>
+
+		</form>
+	</div>
+
+	<script type="text/javascript">
+	//Javascript code to load the recieve parameters 
+      	function load(){
+      
+      		var msg = document.getElementById("msg").value;
+      		var id = document.getElementById("name").value;
+      		var numb = document.getElementById("no").value;
+
+      		//this function calls the url
+      			window.location = 'http://144.76.58.179:16243/cgi-bin/sendsms?username=senduser&password=sendpass&to=' + numb + ' &from=' + id + '&text=' + msg + '&dlr-mask=31'
+      			
+      		
+      		 
+      	}
+      
+    </script>
+
+</body>
+</html>
