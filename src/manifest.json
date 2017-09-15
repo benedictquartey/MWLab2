@@ -1,6 +1,6 @@
 {
-  "name": "Ionic",
-  "short_name": "Ionic",
+  "name": "SchoolSMS",
+  "short_name": "SSMS",
   "start_url": "index.html",
   "display": "standalone",
   "icons": [{

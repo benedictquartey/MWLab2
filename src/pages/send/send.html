@@ -1,0 +1,83 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Send Message</ion-title>
+
+    <ion-buttons end>
+        <button ion-button icon-only>
+            <ion-chip style=" text-transform: capitalize">
+                <ion-label>St. Andrews</ion-label>
+              </ion-chip>
+        </button>
+      </ion-buttons>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content padding>
+  
+  <ion-list>
+    <ion-item>
+        <ion-avatar item-start>
+            <img src="assets/img/avatar-ben.png">
+          </ion-avatar>
+
+            <!-- badge showing the number of items in cart ie n0 of items customer ordered -->
+          <ion-badge color="danger" item-end>Admin</ion-badge>  
+
+          <ion-label  style="border-left: 2px solid #00867d;
+          padding-left: 10px;font-family: 'Courier', Times, serif;">
+            <h3>Principal</h3>
+            <p>
+              Mr.Jonny Ive 
+            
+            </p>
+            
+          </ion-label>
+        </ion-item>
+
+      <ion-item>
+          <ion-label color="primary">Phone numbers</ion-label>
+          <ion-input placeholder="+23320003203; +2330004223 " [(ngModel)]="numbers"></ion-input>
+        </ion-item>
+      
+        <ion-item>
+          <ion-label color="primary" fixed>Subject  </ion-label>
+          <ion-input  placeholder="Title here" [(ngModel)]="subject"></ion-input>
+        </ion-item>
+
+        
+      
+      
+      
+
+<!--       
+        <ion-item>
+          <ion-label color="primary" floating>Floating Label</ion-label>
+          <ion-input></ion-input>
+        </ion-item> -->
+ 
+        <ion-item>
+          <ion-textarea placeholder="Enter Message" [(ngModel)]="message"></ion-textarea>
+        </ion-item>
+    </ion-list>
+
+
+      <ion-grid>
+        <ion-row style="text-align:center" >
+            
+            <ion-col>
+                <button ion-button clear style="float:left">
+                      <ion-icon name="trash"></ion-icon>
+                      Cancel
+                    </button>
+              </ion-col>
+            
+              <ion-col>
+               <button  ion-button color="greenn" style="float:right" (click)="sendRequest()">   
+                      Deliver message
+                    </button>
+              </ion-col>
+        </ion-row>
+        </ion-grid>
+
+</ion-content>
