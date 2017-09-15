@@ -1,0 +1,25 @@
+body{
+	background-color: #E0EEEE;
+}
+
+button{
+	color:blue;
+}
+}
+.img{
+	margin-top: 0%;
+	margin-left: 5%;
+	float: left;
+	width: 20%;
+	height: 20%;
+}
+.form{
+	margin-top: 5%;
+	margin-left: 5%;
+	text-orientation: center;
+	text-align: center;
+}
+.title{
+   text-align: center;
+   font-weight: bold;
+}
