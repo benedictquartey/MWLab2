@@ -18,17 +18,19 @@
 
 		  			 Message:
 		  			<textarea rows="4" cols="50" type="text" name="message" id ="message"></textarea><br> <br>             
-		     		<button type="send" class="btn btn-primary">Send</button>
+		     		<button type="send" class="btn btn-primary" onclick="sendsms()">Send</button>
 					  
 				</form>
 
 				<script>
+
+				  function sendsms(){
 				   $senderid= document.getElementByid("senderid");
-				   $phonenumber= document.getElementByid("number");
+				   $phonenumber= document.getElementByid("number");				   
 				   $message= document.getElementByid("message");
 
-				   $url = ""
-
+				   $url = "URL: 144.76.58.179:16243/cgi-bin/sendsms?username=senduser&password=sendpass&to="+$phonenumber+"&from=" + $senderid + "&text="+ $message +"&dlr-mask=31"
+                  }
 				</script>		     
 
 	     
