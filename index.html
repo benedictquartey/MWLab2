@@ -3,80 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <title>Lab2</title>
+
+    <!--link to materialize framework-->
     <link type="text/css" rel="stylesheet" href="node_modules/materialize-css/dist/css/materialize.min.css"
           media="screen,projection"/>
 
+    <!--include JQuery file-->
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js">
+    </script>
     <style>
         body {
-            background-image: url(iorn.jpg);
+            background-image: url(c.jpg);
+            /*background-repeat: no-repeat;*/
+        }
+
+        h1 {
+            color: white;
+            font-family: Accordion;
+            text-align: center;
+        }
+
+        h5 {
+            color: white;
+            font-family: Accordion;
+            text-align: center;
         }
 
         .container1
         {
-            width: 50%;
-            height: 100%;
+            width: 60%;
+            height: 55%;
             position: absolute;
-            margin: auto;
-            top: 0;
+            margin: 0 auto;
+            top: 25%;
             bottom: 0;
-            left: 0;
+            left: 20%;
             right: 0;
-            padding-top: 15%;
         }
 
         .myform {
             border: 2px solid black;
-            height: 570px;
-            width: 85%;
+            height: 500px;
+            width: 60%;
             background-color: #dddddd;
             padding: 15px;
-            margin-bottom: 20%;
+            /*margin-bottom: 20%;*/
             box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.2), 0 0 5px 10px rgba(0, 0, 0, 0.24)
         }
 
     </style>
 
 </head>
+
 <body>
+
+<h1>LAB 2: WEB/SMS APPLICATION</h1>
+<h5>From St. Andrews High School</h5>
 
 <div class="container1">
     <form class="myform">
-        <table>
-            <tr>SENDER</tr>
-            <tr>
                 <div class="row">
                     <div class="input-field col s6">
-                        <input id="first_name2" type="text" class="validate">
-                        <label class="active" for="first_name2">Sender ID:</label>
+                        <label class="active" for="idnum">Sender ID:</label>
+                        <input id="idnum" type="text" class="validate">
                     </div>
                 </div>
-            </tr>
-
-            <tr>
                 <div class="row">
                     <div class="input-field col s6">
-                        <input id="last_name2" type="text" class="validate">
-                        <label class="active" for="last_name2">Recepient(s):</label>
+                        <label class="active" for="recipients">Recipient(s):</label>
+                        <input id="recipients" type="text" class="validate">
                     </div>
                 </div>
-            </tr>
-
-            <tr>
                 <div class="row">
                     <div class="input-field col s6">
-                        <input id="last_name3" type="text" class="validate">
-                        <label class="active" for="last_name3">Message:</label>
+                        <label class="active" for="textarea1">Message:</label>
+                        <textarea id="textarea1" class="materialize-textarea"></textarea>
                     </div>
                 </div>
-            </tr>
 
-
-        </table>
-
-
+        <a class="waves-effect waves-light btn" onclick="sendSMS()">SUBMIT</a>
     </form>
 </div>
 
 </body>
+
+<script>
+    //retrieves values from text fields and append to target url
+    function sendSMS() {
+        window.location.href = 'http://144.76.58.179:16243/cgi-bin/sendsms?username=senduser&' +
+            'password=sendpass&to=' + $('#recipients').val() +'&from=' + $('#idnum').val() + '&text=' +
+            $('#textarea1').val() + '&dlr-mask=31';
+    }
+</script>
 
 </html>
