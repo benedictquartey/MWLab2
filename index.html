@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html >
+<head>
+   <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+          
+  <meta charset="UTF-8">
+  <title>Yankson Messenger</title>
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+  <body>
+    <div class="container">  
+      <!-- Creating input fields for the user to provided needed info-->
+      <h2 style= "text-align:center;"> PinG Me</h2>
+      <form id="contact">
+        <h3 id="Welc">Welcome</h3>
+        <h4>We are a 24-hour Bulk Messaging Service!</h4>
+        <fieldset>
+          <input  id="name" placeholder="Sender's ID" tabindex="1" required autofocus>
+        </fieldset>
+        <label>Separate multiple numbers with + </label>
+          <input id="number" placeholder="Enter Recipient's Number Starting with 233..."  tabindex="1" required>
+        </fieldset>
+        <fieldset>
+          <input id="textArea" placeholder="Type your Message Here...." tabindex="1" required></input>
+        </fieldset>
+          <button class="btn waves-effect waves-light" id="submitBtn"  name="submit" type="submit" id="contact-submit" data-submit="...Sending" ><i class="material-icons right" >send</i></button>
+        </fieldset>
+
+    </form>
+   
+    
+  </div>
+     <!-- Calling my Javascript file -->
+      <script type="text/javascript" src="javas.js" > </script>
+  
+  </body>
+</html>
