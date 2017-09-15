@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>SMS APP</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+  </head>
+  <body>
+    
+     <div class="container">
+       <div class="row" style="margin-top: 40px;">
+         <div class="col-md-4"></div>
+         <div class="col-md-4">
+           <h1 style="margin-left:85px;">SMS APP</h1>
+           <form name="smsForm" onsubmit="return sendSMS()">
+              <div class="form-group">
+                <label for="exampleInputEmail1">Sender's ID:</label>
+                <input type="text" class="form-control" id="senderID" placeholder="Sender's ID" name="senderID">
+                <span style="color: red" id="senderspan"></span>
+              </div>
+              <div class="form-group">
+                <label for="exampleInputEmail1">Tel(1):</label>
+                <input type="text" class="form-control" id="tel1" placeholder="telephone number 1" name="tel1">
+                <span style="color: red" id="tel1span"></span>
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1">Tel(2):</label>
+                <input type="text" class="form-control" id="tel2" placeholder="telephone number 2" name="tel2">
+                <span style="color: red" id="tel2span"></span>
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1">Tel(3):</label>
+                <input type="text" class="form-control" id="tel3" placeholder="telephone number 3" name="tel3">
+                <span style="color: red" id="tel3span"></span>
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1">Message:</label>
+                <textarea placeholder="Message" class="form-control" id="message" name="message"></textarea>
+                <span style="color: red" id="messagespan"></span>
+              </div>
+              <button type="submit" class="btn btn-info form-control">Send Message</button>
+          </form>
+         </div>
+         <div class="col-md-4"></div>
+
+       </div>
+     </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
