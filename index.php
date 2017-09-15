@@ -7,18 +7,22 @@
 	</head>
 
 	<body>
+
+    <?php include_once("processIndex.php");
+    ?>
+      
 		<div class="container">  
   			<form id="contact" action="" method="post">
-    			<h3>Send Sms Here</h3>
+    			<h3>Send New SMS</h3>
    
     			<fieldset>
-      				<input placeholder="Receipient(s)" type="text" tabindex="1" required autofocus><br><br>
+      				<input placeholder="Enter Receipient(s)" type="text" name="contact" tabindex="1" required autofocus><br><br>
     			</fieldset>
     			<fieldset>
-      				<textarea placeholder="Type your Message Here...." tabindex="5" required></textarea><br><br>
+      				<textarea placeholder="Type your Message Here...." name ="message" tabindex="5" required></textarea><br><br>
     			</fieldset>
     			<fieldset>
-      				<button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Send</button>
+      				<button name="send" type="submit" id="contact-submit" data-submit="...Sending">Send</button>
     			</fieldset>
     		</form>	
 	</body>
