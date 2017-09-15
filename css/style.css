@@ -1,0 +1,72 @@
+#wrapper{
+    width: 90%;
+    margin: 2em auto;
+}
+
+body{
+    
+}
+
+.container{
+    border: 1px solid black;
+    border-radius: 1em;
+}
+
+#nav_bar{
+    height: 50px;
+}
+
+#form_container{
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+    
+}
+
+#form{
+    width: 400px;
+    min-height: 400px;
+    margin: 50px;
+    display:flex;
+    flex-direction: column;
+    
+}
+
+#form_heading{
+    margin-top: 10px;
+}
+
+#login_btn{
+    margin-top: 25px;
+}
+
+#fgt_pwd_div{
+    display: flex;
+    flex-direction:column;
+}
+
+#login_btn{
+    align-self: center;
+}
+
+#fgt_pwd{
+    align-self: flex-end;
+}
+
+
+#inputs{
+    display:flex;
+    flex-direction:column;
+}
+
+
+/* Italicise input placeholders */
+::-webkit-input-placeholder{
+    font-style: italic;
+} 
+::-moz-placeholder{
+    font-style: italic;
+}
+::-ms-input-placeholder{
+    font-style: italic;
+}
