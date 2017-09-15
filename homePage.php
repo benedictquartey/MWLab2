@@ -13,14 +13,11 @@
     <link rel="stylesheet" type="text/css" href="bootstrap/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="mycss.css">
   </head>
-    <body>
+    <body id="bImage">
+
         <!-- header for nagivation---future -->
       	<nav class="navbar navbar-light bg-light justify-content-between">
           <a class="navbar-brand">Welcome to Our SMS Service- PTA ST. Andrews High School</a>
-          <form class="form-inline">
-            <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-          </form>
         </nav>
         
         <!-- set the form to the midlle -->
@@ -29,7 +26,7 @@
               <form action="msgpass.php" method="get">
                 <h3 id="myTop">Send your messages to Parents</h3>
                 <input class="form-control mr-sm-2" type="text" placeholder="Enter number(s); separate by commas(,)" aria-label="Number(s)" name="num"> <br>
-                <textarea class="form-control mr-sm-2" type="text" placeholder="message" aria-label="Number(s)" name="msg"> Enter your message</textarea> <br>
+                <textarea class="form-control mr-sm-2" type="text" placeholder="message" aria-label="Number(s)"  maxlength="10"name="msg" > Enter your message</textarea> <br>
                 <button class="btn btn-outline-success my-2 my-sm-0" type="submit" name="submit">send</button>
               </form>
       	</div>
