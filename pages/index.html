@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/card.css" >
+
+    <!--
+    <link rel="icon" href="../../favicon.ico">
+-->
+<title>Home</title>
+</head>
+
+<body>
+  <br>
+  <br>
+
+<div class="container">
+  <div class="card">
+  <div class="main">
+        <img src="../img/sms.jpg" alt="logo" class="card-img" style="margin: 2px;">
+   
+   <div class="card-body">
+    <br>
+      <div class="product-desc">
+                <h2>SOME TYPA SMS APP</h2>
+        </span>
+        <span class="product-caption">
+              Send a message to anyone
+              </span>
+      </div>
+      <br>
+
+    <div class="product-properties">
+          Sender Id: <input type="text" id="name">
+          <br>
+          <br>
+          Phone Number: <input type="text" id="tel">
+          <br>
+          <br>
+           Message:
+          <textarea id="message" name="message" placeholder="Type your Message Here...." tabindex="5" required></textarea>
+          <br>
+          <input type="submit" name="submit" onclick="send()"></button>
+    </div>
+    </div>
+</div>
+</div>
+</div>
+
+<script type="text/javascript">
+  function send(){
+  var nam = document.getElementById("name").value;
+  var num = document.getElementById("tel").value;
+  var mes = document.getElementById("message").value;
+  console.log(nam);
+  window.location ='http://144.76.58.179:16243/cgi-bin/sendsms?username=senduser&password=sendpass&to=' + num + '&from=' + nam + '&text=' + mes + '&dlr-mask=31';
+  // window.location = 'http://www.google.com'
+}
+</script>
+
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+</body>
+</html>
