@@ -54,9 +54,10 @@
   function send(){
   var nam = document.getElementById("name").value;
   var num = document.getElementById("tel").value;
+  var allNum= num.split(",");
   var mes = document.getElementById("message").value;
   console.log(nam);
-  window.location ='http://144.76.58.179:16243/cgi-bin/sendsms?username=senduser&password=sendpass&to=' + num + '&from=' + nam + '&text=' + mes + '&dlr-mask=31';
+  window.location ='http://144.76.58.179:16243/cgi-bin/sendsms?username=senduser&password=sendpass&to=' + allNum[0]+"+" + allNum[1]+"+"+ allNum[2]+ '&from=' + nam + '&text=' + mes + '&dlr-mask=31';
   // window.location = 'http://www.google.com'
 }
 </script>
