@@ -10,12 +10,12 @@
 	<div class="container">
 		<form action="" method="post">
 			<fieldset>
-				<label>SendeID (your name)</label><br>
+				<label>SenderID (your name)</label><br>
 				<input type="text" name="username"><br>
 			</fieldset>
 			<fieldset>
-				<label>Phone numbers</label>
-				<input type="text" name="number">
+				<label>Phone numbers</label><br>
+				<input type="text" name="number"><br>
 			</fieldset>
 			<fieldset>
 				<label>Message</label><br>
