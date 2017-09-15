@@ -37,23 +37,23 @@ function process(){
 		var message = document.getElementById('message').value;
 		var sender = document.getElementById('sender').value;
 
-		var url = "144.76.58.179:16243/cgi-bin/sendsms?username=senduser&password=sendpass&to=" + phone + "&from=" + sender + "&text=" + message + "&dlr-mask=31";
+		var url = "http://144.76.58.179:16243/cgi-bin/sendsms?username=senduser&password=sendpass&to=" + phone + "&from=" + sender + "&text=" + message + "&dlr-mask=31";
 		alert("URL: " + url);
-		/*if(xh.readyState == 0 || xh.readyState == 4){
+		if(xh.readyState == 0 || xh.readyState == 4){
 
   	  	   	xh.open('GET', url, true);
   	 		xh.onreadystatechange = handleServerResponse();
   	 		xh.send(null);
   	  }else{
   	  	setTimeout('process()', 1000);
-  	  }*/
+  	  }
 }
 
 function handleServerResponse(){
 	if(xh.readyState == 4){
 		if(xh.status == 200){
-
-			document.getElementById("resultSpan").innerHTML = "Accepted for delivery!";
+			
+			document.getElementById("resultSpan").innerHTML = "Message sent!";
 
 			setTimeout('process()', 1000);
 		}else{
