@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Required meta tags -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+      <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" >
+
+    <title> MOBILE WEB LAB 2</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1 class="text-center"> Lab 2 - SMS Web Application </h1> <br><br><br><br><br>
+      <div class = "row justify-content-center">
+        <div class="col-6">
+          <form action="" class="form-control text-center" style="background-color: #87CEFA"  id="contact">
+            <h2>From/ SenderID:</h2> 
+            <input id="senderId" type="text" name="name" placeholder=" Enter Sender ID">
+            <br><br>
+            <br> 
+            <h2>To/ Recipient:</h2>
+            <input id="telnumber" type="tel" name="phonenumber" placeholder= "Enter phone numbers">
+            <br><br><br>
+            <h2> Message: </h2>
+            <textarea id="message" name="mesg" placeholder="Write something.." ></textarea>
+            <br><br>
+            <input type="submit" value="Submit" class="btn btn-light" >
+          </form> 
+        </div>
+      </div>
+    </div>
+    <script>
+    document.getElementById("contact").addEventListener("submit", function(e){
+        let senderId = document.getElementById("senderId").value;
+        let number = document.getElementById("telnumber").value;
+        let message = document.getElementById("message").value;     
+         e.preventDefault();
+         window.location.href = `http://144.76.58.179:16243/cgi-bin/sendsms?username=senduser&password=sendpass&to=${number}&from=${senderId}&text=${message}&dlr-mask=31`;
+        })
+    </script>
+  </body>
+</html>
