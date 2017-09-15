@@ -11,42 +11,70 @@
   </head>
 
   <body>
-
-<div class="container">
-    <div>        
-        <br style="clear:both">
-            <div class="form-group col-md-4 ">                                
-                <label id="messageLabel" for="message">Message </label>
-                <textarea class="form-control input-sm " type="textarea" id="message" placeholder="Message" maxlength="140" rows="7"></textarea>
-                                 
+  <div class="container">
+  <div class="row">
+    <div class="col-md-4">
+    <div class="form_main">
+                <h4 class="heading"><strong>St. Andrews High School </strong> SMS <span></span></h4>
+                <div class="form">
+                <form action="contact_send_mail.php" method="post" id="contactFrm" name="contactFrm">
+                    <input type="text" required="" placeholder="Please input your Name" value="" name="name" class="txt" id="name">
+                    <input type="text" required="" placeholder="Please input recipient's mobile No" value="" name="mob" class="txt" id="number">
+                    
+                   <textarea placeholder="Your Message" name="mess" type="text" class="txt_3" id="txt"></textarea>
+                     <input type="submit" id="sub" value="submit" name="submit" class="txt2" onclick="post();">
+                </form>
             </div>
-        <br style="clear:both">
-        <div class="form-group col-md-2">
-        <button class="form-control input-sm btn btn-success disabled" id="btnSubmit" name="btnSubmit" type="button" style="height:35px"> Send</button>    
-    </div>
+            </div>
+            </div>
+            </div>
 </div>
 
-  </body>
-  </html>
+<div id="result"></div>
+
+
+
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+ 
+ <script>
+
+ var name;
+ var text;
+ var number;
+
+
+ function clearForm(){
+
+        $('.form input[name=name]').val("");
+        $('.form input[name=mob]').val("");
+        $('.form input[name=mess]').val("");
+
+  }
+
+function sendMessage(){
+
+}
+
+
+ $("#sub").click(function(){
+          clearForm();
+        })
+
+function post(){
   
-  <script>
+   var name = $('#name').val();
+   var num = $('#number').val();
+   var text = $('#txt').val();
 
-  $(document).ready(function(){ 
-    $('#message').keyup(function () {
-        var max = 140;
-        var len = $(this).val().length;
-        if (len >= max) {
-            $('#characterLeft').text('You have reached the limit');
-            $('#characterLeft').addClass('red');
-            $('#btnSubmit').addClass() ;        
-        } 
-        else {
-            var ch = max - len;
-            $('#characterLeft').text(ch + ' characters left');
-            $('#btnSubmit').removeClass('disabled');
-            $('#characterLeft').removeClass('red');            
-        }
-    });    
-});
+   $.post('validate.php',{postname:name,postnum:number,posttext:txt}, 
+    function(data) {
 
-  </script>
+      $('#result').html(data);
+
+    } );
+}
+
+
+</script>
+</body>
+</html>
