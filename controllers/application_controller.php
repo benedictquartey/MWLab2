@@ -19,6 +19,7 @@ switch($page)
     $message = htmlspecialchars($_POST['message']);
     $receivers = htmlspecialchars($_POST['receivers']);
     send_message($receivers, $message);
+    header('Location: index.php');
     break;
 }
 
