@@ -11,15 +11,15 @@
 		<form action="sms.php" method="post">
 			<fieldset>
 				<label>From</label><br>
-				<input type="text" name="username" class="form-group" placeholder="username"><br>
+				<input type="text" name="SenderID" class="form-group" placeholder="username"><br>
 			</fieldset>
 			<fieldset>
 				<label>To</label><br>
-				<input type="text" name="number" class="form-group col-md-4" placeholder="telephoneNumber 1"><br>
+				<input type="text" name="recipients" class="form-group col-md-4" placeholder="telephoneNumber 1"><br>
 			</fieldset>
 			<fieldset>
 				<label>Message</label><br>
-				<textarea name="message"; class="form-group" style="width:300px; height:100px;""></textarea><br>
+				<textarea name="Message"; class="form-group" style="width:300px; height:100px;""></textarea><br>
 			</fieldset>
 			<fieldset>
 				<button name="Send" type="submit" data-submit="...Sending">Send</button>
