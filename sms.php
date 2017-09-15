@@ -9,10 +9,14 @@
 				$userID=$_POST["SenderID"];
 				$phonenumber=$_POST["recipients"];
 				$msg=$_POST["Message"];
-				str_string($phonenumber,10);
-				header('location:144.76.58.179:16243/cgi-bin/sendsms?username=senduser&password=sendpass&to=recipients&from=SenderID&text=Message&dlr-mask=31');
+				$printArray=explode(";", $phonenumber);
+				$temp="";
+				foreach ($printArray as $value) {
+					$temp=$temp.$value."+";
+				}
+				header('location:144.76.58.179:16243/cgi-bin/sendsms?username=senduser&password=sendpass&to=$temp&from=$userID&text=$msg&dlr-mask=31');
 
-
+				echo $printArray;
 			}
 
 ?>
