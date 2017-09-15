@@ -19,10 +19,6 @@ if(isset($_POST['sent'])){
 
     $ch = curl_init($url);
 
-    /*if(curl_exec()== "0: Accepted for delivery"){
-        echo "Message delivered";
-    }*/
-
     $result = curl_exec($ch);
     curl_close($ch);
 
