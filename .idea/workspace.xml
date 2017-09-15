@@ -2,167 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7ed304b3-cfe5-40a1-a5fa-bcf49ffb7455" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ico.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img-2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/iorn.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/semantic/.versions" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/semantic/LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/semantic/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/semantic/components/accordion.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/semantic/components/accordion.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/semantic/components/accordion.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/semantic/components/accordion.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/semantic/components/ad.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/semantic/components/ad.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/semantic/components/api.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/semantic/components/api.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/semantic/components/breadcrumb.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/semantic/components/breadcrumb.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/semantic/components/button.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/semantic/components/button.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/semantic/components/card.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/semantic/components/card.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/semantic/components/checkbox.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/semantic/components/checkbox.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/semantic/components/checkbox.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/semantic/components/checkbox.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/semantic/components/colorize.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/semantic/components/colorize.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/semantic/components/comment.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/semantic/components/comment.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/semantic/components/container.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/semantic/components/container.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/semantic/components/dimmer.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/semantic/components/dimmer.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/semantic/components/dimmer.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/semantic/components/dimmer.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/semantic/components/divider.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/semantic/components/divider.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/semantic/components/dropdown.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/semantic/components/dropdown.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/semantic/components/dropdown.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/semantic/components/dropdown.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/semantic/components/embed.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/semantic/components/embed.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/semantic/components/embed.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/semantic/components/embed.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/semantic/components/feed.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/semantic/components/feed.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/semantic/components/flag.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/semantic/components/flag.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/semantic/components/form.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/semantic/components/form.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/semantic/components/form.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/semantic/components/form.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/semantic/components/grid.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/semantic/components/grid.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/semantic/components/header.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/semantic/components/header.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/semantic/components/icon.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/semantic/components/icon.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/semantic/components/image.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/semantic/components/image.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/semantic/components/input.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/semantic/components/input.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/semantic/components/item.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/semantic/components/item.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/semantic/components/label.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/semantic/components/label.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/semantic/components/list.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/semantic/components/list.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/semantic/components/loader.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/semantic/components/loader.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/semantic/components/menu.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/semantic/components/menu.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/semantic/components/message.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/semantic/components/message.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/semantic/components/modal.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/semantic/components/modal.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/semantic/components/modal.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/semantic/components/modal.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/semantic/components/nag.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/semantic/components/nag.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/semantic/components/nag.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/semantic/components/nag.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/semantic/components/popup.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/semantic/components/popup.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/semantic/components/popup.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/semantic/components/popup.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/semantic/components/progress.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/semantic/components/progress.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/semantic/components/progress.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/semantic/components/progress.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/semantic/components/rail.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/semantic/components/rail.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/semantic/components/rating.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/semantic/components/rating.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/semantic/components/rating.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/semantic/components/rating.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/semantic/components/reset.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/semantic/components/reset.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/semantic/components/reveal.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/semantic/components/reveal.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/semantic/components/search.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/semantic/components/search.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/semantic/components/search.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/semantic/components/search.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/semantic/components/segment.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/semantic/components/segment.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/semantic/components/shape.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/semantic/components/shape.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/semantic/components/shape.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/semantic/components/shape.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/semantic/components/sidebar.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/semantic/components/sidebar.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/semantic/components/sidebar.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/semantic/components/sidebar.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/semantic/components/site.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/semantic/components/site.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/semantic/components/site.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/semantic/components/site.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/semantic/components/state.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/semantic/components/state.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/semantic/components/statistic.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/semantic/components/statistic.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/semantic/components/step.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/semantic/components/step.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/semantic/components/sticky.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/semantic/components/sticky.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/semantic/components/sticky.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/semantic/components/sticky.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/semantic/components/tab.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/semantic/components/tab.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/semantic/components/tab.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/semantic/components/tab.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/semantic/components/table.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/semantic/components/table.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/semantic/components/transition.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/semantic/components/transition.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/semantic/components/transition.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/semantic/components/transition.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/semantic/components/video.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/semantic/components/video.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/semantic/components/video.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/semantic/components/video.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/semantic/components/visibility.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/semantic/components/visibility.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/semantic/components/visit.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/semantic/components/visit.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/semantic/package.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/semantic/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/semantic/semantic.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/semantic/semantic.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/semantic/semantic.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/semantic/semantic.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/semantic/themes/default/assets/fonts/icons.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/semantic/themes/default/assets/fonts/icons.otf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/semantic/themes/default/assets/fonts/icons.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/semantic/themes/default/assets/fonts/icons.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/semantic/themes/default/assets/fonts/icons.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/semantic/themes/default/assets/fonts/icons.woff2" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/semantic/themes/default/assets/images/flags.png" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/materialize-css/dist/css/materialize.min.css" afterPath="$PROJECT_DIR$/node_modules/materialize-css/dist/css/materialize.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -376,12 +216,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1505489832016</updated>
-      <workItem from="1505489838018" duration="10091000" />
+      <workItem from="1505489838018" duration="10395000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10091000" />
+    <option name="totallyTimeSpent" value="10395000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
