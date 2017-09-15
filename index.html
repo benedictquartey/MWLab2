@@ -2,56 +2,81 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Bulletin</title>
-
-    <link rel="stylesheet" type="text/css" href="semantic/semantic.min.css">
-    <script
-            src="https://code.jquery.com/jquery-3.1.1.min.js"
-            integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
-            crossorigin="anonymous"></script>
-    <script src="semantic/semantic.min.js"></script>
+    <title>Lab2</title>
+    <link type="text/css" rel="stylesheet" href="node_modules/materialize-css/dist/css/materialize.min.css"
+          media="screen,projection"/>
 
     <style>
-        label{
-            color: black !important;
+        body {
+            background-image: url(iorn.jpg);
         }
+
+        .container1
+        {
+            width: 50%;
+            height: 100%;
+            position: absolute;
+            margin: auto;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding-top: 15%;
+        }
+
+        .myform {
+            border: 2px solid black;
+            height: 570px;
+            width: 85%;
+            background-color: #dddddd;
+            padding: 15px;
+            margin-bottom: 20%;
+            box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.2), 0 0 5px 10px rgba(0, 0, 0, 0.24)
+        }
+
     </style>
+
 </head>
-<body style="background-image: url('img-2.jpg')">
+<body>
+
+<div class="container1">
+    <form class="myform">
+        <table>
+            <tr>SENDER</tr>
+            <tr>
+                <div class="row">
+                    <div class="input-field col s6">
+                        <input id="first_name2" type="text" class="validate">
+                        <label class="active" for="first_name2">Sender ID:</label>
+                    </div>
+                </div>
+            </tr>
+
+            <tr>
+                <div class="row">
+                    <div class="input-field col s6">
+                        <input id="last_name2" type="text" class="validate">
+                        <label class="active" for="last_name2">Recepient(s):</label>
+                    </div>
+                </div>
+            </tr>
+
+            <tr>
+                <div class="row">
+                    <div class="input-field col s6">
+                        <input id="last_name3" type="text" class="validate">
+                        <label class="active" for="last_name3">Message:</label>
+                    </div>
+                </div>
+            </tr>
 
 
-<br> <br>
-<br> <br>
+        </table>
 
-<div class="ui grid">
-        <div class="five wide column"></div>
-        <div class="six wide column">
-            <form class="ui form" method="post" action="index.php">
-                <div style="text-align: center">
-                    <h2 class="ui header">
-                        <img src="ico.png">
-                        <div class="content" style="color:whitesmoke">
-                            Hyperloop SMS
-                        </div>
-                    </h2>
-                </div> <br> <br>
-                <div class="field">
-                    <label>Sender ID</label>
-                    <input type="text" name="senderID" placeholder="eg. ECOBANK" required>
-                </div>
-                <div class="field">
-                    <label>Recipient</label>
-                    <input type="text" name="numbers" placeholder="Enter numbers separated by semi-colons" required>
-                </div>
-                <div class="field">
-                    <label>Message</label>
-                    <textarea placeholder="Enter message here" cols="4" required> </textarea>
-                </div>
-                <input class="ui primary button" type="submit" name="sent"></input>
-            </form>
-        </div>
-        <div class="five wide column"></div>
-    </div>
+
+    </form>
+</div>
 
 </body>
+
 </html>
