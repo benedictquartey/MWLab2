@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SMS APP</title>
+	<meta charset="utf-8">
+	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body style="background-color:powderblue;">
+<center>
+	<p>
+		<h2>Hi there,<br/>Welcome to the SMS Application.<br/> Enjoy your stay!</h2>
+	</p>
+</center><br/><br/>
+<div class="container">
+	<center>
+		<form class="form-horizontal">
+			<div class="form-group">
+				<label class="control-label col-sm-3" for="sID">SenderID</label>
+				<div class="col-sm-4">
+					<input type="text" class="form-control" id="sID" placeholder="Enter your SenderID" name="sID">
+				</div>
+			</div>
+			<div class="form-group">
+				<label class="control-label col-sm-3" for="recep1"> Recepient 1</label>
+				<div class="col-sm-4">
+					<input type="text" class="form-control" id="recep1" min="10" max="10" placeholder="Enter phone number" name="recep1">
+				</div>
+			</div>
+			<div class="form-group">
+				<label class="control-label col-sm-3" for="recep2"> Recepient 2</label>
+				<div class="col-sm-4">
+					<input type="text" class="form-control" id="recep2" min="10" max="10" placeholder="Enter phone number" name="recep2">
+				</div>
+			</div>
+			<div class="form-group">
+				<label class="control-label col-sm-3" for="recep3"> Recepient 3</label>
+				<div class="col-sm-4">
+					<input type="text" class="form-control" id="recep3" min="10" max="10" placeholder="Enter phone number" name="recep3">
+				</div>
+			</div>
+			<div class="form-group">
+				<label class="control-label col-sm-3" for="text"> Enter your message below</label>
+				<div class="col-sm-4">
+					<textarea class="form-control" id="text" rows="5" cols="30" name="text"></textarea>
+				</div>
+			</div> 
+			<div class="form-group">        
+      			<div class="col-sm-offset-2 col-sm-8">
+        			<button type="button" class="btn btn-success" onclick="triggerUrl()">Send Message</button>
+      			</div>
+    		</div>
+		</form>
+	</center>
+</div>
+	  <script type="text/javascript" src="lab2.js"></script>
+</body>
+</html>
