@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+ <head>
+   <meta charset="utf-8" />
+   <link rel="stylesheet" type="text/css" href="messager.css">
+  </head>
+  <body>
+
+  <?php include 'messager.php';?>
+   <div id="container">
+    <h1>St. Andrew's High SMS Sender</h1>
+
+    <form action="" method="post">
+     <ul>
+
+      <li>
+      <label for="receip1">Receip1: </label>
+       <input type="text" name="receip" id="receip" />
+      </li>
+
+      <li>
+      <label for="receip2">Receip2: </label>
+       <input type="text" name="receip" id="receip" />
+      </li>
+
+      <li>
+      <label for="receip3">Receip3: </label>
+       <input type="text" name="receip" id="receip" />
+      </li>
+
+      <li>
+       <label for="smsMessage">Message</label>
+       <textarea name="smsMessage" id="smsMessage" cols="45" rows="15"></textarea>
+      </li>
+
+     <li><a href="?<?php echo $senderLink ?>">Send</a></li>
+    </ul>
+   </form>
+
+  </div>
+
+ </body>
+</html>
